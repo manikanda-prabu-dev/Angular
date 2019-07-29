@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<div>
+  <ng-container *ngIf="hasError; then thenTemplate; else elseTemplate"></ng-container>
+  <ng-template #thenTemplate>
+    <div style="text-align: center;margin-top:20%;">
+      <h1 style="font-size:15px;">{{errorMessage}}</h1>
+      <button type="button" class="btn btn-success" (click)="retry()"><h3>retry</h3></button>
+    </div>
+  </ng-template>
+  <ng-template #elseTemplate>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-5">
+          <img id="logo" src="https://www.themissionchurch.net/hp_wordpress/wp-content/uploads/2018/11/3-Circle-M.png"
+            width="150px" height="150px" alt="images">
+          <h1 style="text-align: center; color:green;">"Simple Solutions for Complex Connections"</h1>
+          <div>
+            <p id="quote">The technology sector is the category of stocks relating to the research, development and/or distribution
+              of technologically based goods and services.The technology sector offers a wide arrange of products and
+              services for both customers and other businesses.</p>
+          </div>
+
+        </div>
+        <div class="col-2">
+          <div class="vl"></div>
+        </div>
+        <div class="col-5">
+          <div id="form">
+
+            <div class="formbox">
+              <h1 style="text-align: center;margin-top:15%;color :green;">Login</h1>
+              <form id="myform" (submit)="validation($event)">
+                <label class="control-label" for="name">Name</label>
+                <input type="name" class="form-control" id="name">
+                <label class="control-label" for="name">Email</label>
+                <input type="email" class="form-control" pattern="^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+.[a-zA-Z0-9-.]+$"
+                  id="email">
+                <label class="control-label" for="name">Password</label>
+                <input type="password" class="form-control" id="pw" minlength="4">
+                <button type="submit" class="btn btn-success" style="margin-top: 10%;margin-left: 35%;">
+                  <h4>Log in</h4>
+                </button>
+              </form>
+              <div>
+                <h3 style="color: darkred;margin-top: 10%;">{{message}}</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </ng-template>
+</div>

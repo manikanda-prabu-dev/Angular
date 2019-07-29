@@ -1,0 +1,41 @@
+<app-header></app-header>
+<div class="body">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <p id=heading>Contact</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-6">
+                <div class="subheading">Reach Us
+                    <hr>
+                </div>
+                <div class="form-group">
+                        <form id="myform" (submit)="feedback($event)">
+                    <label>Name</label>
+                    <input id="name" name="name" type="text" class="form-control" value="{{inputNameFromOtherComponent}}">
+                    <label>Email</label>
+                    <input id="email" name="email" type="text" class="form-control" value="{{inputEmailFromOtherComponent}}">
+                    <label>Feedback</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your message"></textarea>
+                    <button type="submit" style="margin-top:2%;" type="submit" class="btn btn-primary btn-lg">Submit</button>
+                </form>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="subheading">Locate Us
+                    <hr>
+                </div>
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe width="600" height="500" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=Chennai&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a
+                            href="https://www.enable-javascript.net">see how</a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

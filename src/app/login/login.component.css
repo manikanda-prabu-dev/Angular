@@ -1,0 +1,30 @@
+#logo{
+   margin-top: 25%;
+   margin-left:35%;
+}
+.vl {
+    margin-top: 125px;
+    margin-left: 50%;
+    border-left: 4px solid green;
+    height: 400px;
+  }
+.formbox{
+    position: relative;
+    margin-top: 30%;
+    width: 30%;
+    color: black;
+    margin-left: 15%;
+    font-size: 15px;
+    }
+    #quote{
+        font-size: 15px;
+        margin-top: 8%;
+        text-align: center;
+    }
+.form-control{
+    font-size: 15px;
+}
+     
+      
+            
+    

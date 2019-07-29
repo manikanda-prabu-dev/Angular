@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<app-header></app-header>
+<div class="body">
+        <div class="container-fluid">
+                <div class="row">
+                        <div class="col-12">
+                                <h2 id="welcome">A Warm Welcome {{inputFromOtherComponent}}</h2>
+                        </div>
+                </div>
+        </div>
+        <!-------------------------------------Slideshow begin here----------------------------------------->
+        <div class="container" style="height: 300px;width:600px;margin-top: 2%">
+                <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Wrapper for slides -->
+                        <div class="carousel-inner">
+                                <div class="item active">
+                                        <img src="https://nexter.org/wp-content/uploads/2018/11/AdobeStock_172924086-800x451.jpeg"
+                                                alt="Techslide 1" style="width:100%;height:50%">
+                                </div>
+
+                                <div class="item">
+                                        <img src="https://51z9g3788ic2pmbl336zcghi-wpengine.netdna-ssl.com/wp-content/uploads/2018/01/hp-partner-social-800x451.png"
+                                                alt="Techslide 2" style="width:100%;height:50%">
+                                </div>
+
+                                <div class="item">
+                                        <img src="https://1.cms.s81c.com/sites/default/files/2019-04-11/DHq-VQmW0AE-ydR.jpg_large-800x451.jpeg"
+                                                alt="Techslide 3" style="width:100%;height:50%">
+                                </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <div id="carousel">
+                                <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                                        <span class="glyphicon glyphicon-chevron-left"></span>
+                                        <span class="sr-only">Previous</span>
+                                </a>
+                                <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                                        <span class="glyphicon glyphicon-chevron-right"></span>
+                                        <span class="sr-only">Next</span>
+                                </a>
+                        </div>
+                </div>
+        </div>
+        <!---------------------------------------Slideshow ends here-------------------------------------------->
+        <div class="container">
+                <div class="row" style="margin-top:6%;" id="paragraph">
+                        <div class="col-12">
+
+                                <h4 style="margin-top: 1%;">
+                                        Websites can have many functions and can be used in various fashions; a website
+                                        can be a personal website, a corporate website for a company, a government
+                                        website, an organization website, etc. Websites are typically dedicated to a
+                                        particular topic or purpose, ranging from entertainment and social networking to
+                                        providing news and education. All publicly accessible websites collectively
+                                        constitute the World Wide Web, while private websites, such as a company's
+                                        website for its employees, are typically part of an intranet.
+                                </h4>
+                                <div style="margin-top: 1%;margin-bottom:1%;"> <a href="https://en.wikipedia.org/wiki/Website" class="btn btn-info" role="button"><h4>Learn more >></h4></a>
+                                </div>
+
+                        </div>
+                </div>
+        </div>
+</div>
+<app-footer></app-footer>

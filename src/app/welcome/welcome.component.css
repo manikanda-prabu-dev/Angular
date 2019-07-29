@@ -1,0 +1,17 @@
+.body{
+    background-image: url("https://images.pexels.com/photos/326311/pexels-photo-326311.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260");
+    height: 650px;
+}
+#welcome{
+    text-align: center;
+    color: aliceblue;
+    margin-top: 5%;
+}
+#paragraph{
+    background: lavender;
+    border-radius: 5px;
+}
+#myCarousel{
+    border-radius: 5px;
+}
+
